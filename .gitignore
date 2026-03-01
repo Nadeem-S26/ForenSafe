@@ -1,0 +1,83 @@
+# ============================================================
+#  Forensafe – .gitignore
+#  Java + Maven + Tomcat + MySQL project
+# ============================================================
+
+# ── Maven build output ────────────────────────────────────────
+target/
+*.war
+*.jar
+*.class
+
+# ── IDE files ─────────────────────────────────────────────────
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/
+build/
+dist/
+
+# ── OS files ──────────────────────────────────────────────────
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac
+.DS_Store
+.AppleDouble
+.Spotlight-V100
+
+# Linux
+*~
+
+# ── Sensitive / config files ──────────────────────────────────
+# IMPORTANT: Never commit DB passwords to GitHub!
+# Before pushing, make sure DBConnection.java has no real password.
+# Use environment variables or a config file listed here.
+
+*.properties
+application.properties
+db.properties
+config.properties
+secret.properties
+
+# ── Logs ──────────────────────────────────────────────────────
+logs/
+*.log
+*.log.*
+
+# ── Tomcat runtime files ──────────────────────────────────────
+work/
+temp/
+
+# ── SQL dump files (contain seed data — optional to exclude) ──
+# Comment out if you WANT to push your SQL files
+# sql/*.sql
+
+# ── Node / frontend (if added later) ─────────────────────────
+node_modules/
+npm-debug.log
+
+# ── Misc ──────────────────────────────────────────────────────
+*.tmp
+*.bak
+*.swp
+*.orig
